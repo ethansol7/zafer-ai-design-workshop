@@ -21,4 +21,4 @@ Curriculum and software references are in the learner workbook. Workshop pacing 
 
 Open [studio.html](studio.html) for five guided activities in an original Blender-made 3D environment. Arrow buttons move the camera. Activities include brief selection, visual direction, editable dimensions, a sample clearance check and a custom STL/notes download. Progress is local to the browser. No AI service is called; these are transparent learning activities. A written workbook remains available if 3D is unavailable.
 
-The studio scene is original Zafer artwork. Three.js 0.180.0 is included under the MIT license in THREE-LICENSE.txt. No BlenderKit assets were used. Serve over HTTP(S); ES modules are not intended to run from file://.
+The studio scene is original Zafer artwork. Three.js 0.180.0 is included under the MIT license in THIRD-PARTY-NOTICES.txt. No BlenderKit assets were used. Serve over HTTP(S); ES modules are not intended to run from file://.
