@@ -1,0 +1,23 @@
+'use strict';
+const widthInput=document.querySelector('#body-width'),channelInput=document.querySelector('#channel-width');
+const project=(x,y,z)=>[65+4.7*x+2.7*y,205+1.25*x-1.9*y-5.7*z];
+const points=values=>values.map(v=>project(...v).map(n=>n.toFixed(2)).join(',')).join(' ');
+function renderModel(){
+ const w=Number(widthInput.value),c=Number(channelInput.value),d=24,h=12,k=6,a=(w-c)/2,b=(w+c)/2;
+ document.querySelector('#width-value').textContent=w+' mm';document.querySelector('#channel-value').textContent=c+' mm';
+ const front=[[0,0,0],[w,0,0],[w,0,h],[b,0,h],[b,0,k],[a,0,k],[a,0,h],[0,0,h]];
+ const faces=[{p:[[0,d,0],[w,d,0],[w,d,h],[0,d,h]],f:'#b8c1ad'},{p:[[a,0,k],[a,d,k],[b,d,k],[b,0,k]],f:'#bfc9b3'},{p:[[a,0,k],[a,d,k],[a,d,h],[a,0,h]],f:'#9ba98c'},{p:[[b,0,k],[b,d,k],[b,d,h],[b,0,h]],f:'#b1bea2'},{p:[[0,0,h],[0,d,h],[a,d,h],[a,0,h]],f:'#f1f3eb'},{p:[[b,0,h],[b,d,h],[w,d,h],[w,0,h]],f:'#eef1e6'},{p:[[w,0,0],[w,d,0],[w,d,h],[w,0,h]],f:'#b2bda4'},{p:front,f:'#d2dbc6'}];
+ document.querySelector('#model-faces').innerHTML=faces.map(f=>`<polygon points="${points(f.p)}" fill="${f.f}" stroke="#59644f" stroke-width="1.2" stroke-linejoin="round"/>`).join('');
+ function dim(start,end,label,dx=0,dy=0){const p=project(...start),q=project(...end);return `<path d="M${p[0]},${p[1]} L${q[0]},${q[1]}" fill="none" stroke="#6d7566" stroke-width=".8"/><text x="${(p[0]+q[0])/2+dx}" y="${(p[1]+q[1])/2+dy}" text-anchor="middle" fill="#4a5442" font-family="Arial,sans-serif" font-size="12">${label}</text>`;}
+ document.querySelector('#model-dimensions').innerHTML=dim([0,-7,0],[w,-7,0],w+' mm',0,19)+dim([w+6,0,0],[w+6,d,0],'24 mm',20,7)+dim([-6,0,0],[-6,0,h],'12 mm',-22,4)+dim([a,d+5,h+2],[b,d+5,h+2],c+' mm',0,-10);
+ document.querySelector('#model-description').textContent=`A ${w} by 24 by 12 millimeter cable rest with a ${c} millimeter wide, 6 millimeter deep channel. Proposed teaching geometry, not physically tested.`;
+}
+function downloadText(name,text,type='text/plain;charset=utf-8'){const url=URL.createObjectURL(new Blob([text],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);}
+widthInput.addEventListener('input',renderModel);channelInput.addEventListener('input',renderModel);renderModel();
+document.querySelector('#reset-model').addEventListener('click',()=>{widthInput.value='60';channelInput.value='6';renderModel();document.querySelector('#dimension-status').textContent='Dimensions reset to 60 millimeter body and 6 millimeter channel.'});
+document.querySelector('#save-dimensions').addEventListener('click',()=>{downloadText('Zafer-Cable-Rest-Dimensions.txt',`ONE / Cable rest — design exercise\n\nWidth: ${widthInput.value} mm\nDepth: 24 mm\nHeight: 12 mm\nChannel width: ${channelInput.value} mm\nChannel depth: 6 mm\nRemaining floor: 6 mm\n\nBuild the editable native model in Fusion using the learner workbook. These are proposed dimensions. Measure your cable and test a physical sample before relying on the fit.\n`);document.querySelector('#dimension-status').textContent='Dimension note downloaded.'});
+const dialog=document.querySelector('#inquiry-dialog'),form=document.querySelector('#inquiry-form');
+document.querySelectorAll('[data-inquiry]').forEach(button=>button.addEventListener('click',()=>{form.elements.interest.value=button.dataset.inquiry;document.querySelector('#inquiry-status').textContent='';dialog.showModal();document.body.classList.add('modal-open')}));
+dialog.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('close',()=>document.body.classList.remove('modal-open'));
+dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});
+form.addEventListener('submit',e=>{e.preventDefault();const f=new FormData(form);downloadText('Zafer-Workshop-Inquiry.txt',`ZAFER / INQUIRY\n\nInterest: ${f.get('interest')}\nGroup / project: ${f.get('group').trim()}\nGroup size: ${f.get('size')||'To discuss'}\nPreferred timing: ${f.get('timing').trim()||'To discuss'}\n\nWHAT WE WOULD LIKE TO MAKE\n${f.get('goal').trim()}\n\nTOOLS / ACCESS / SUPPORT\n${f.get('needs').trim()||'To discuss'}\n\nPlease confirm scope, format, availability, and any fees before booking. This file is an inquiry, not a confirmed booking. Send it to your workshop organizer through your existing contact channel.\n`);document.querySelector('#inquiry-status').textContent='Downloaded. Send the text file to your workshop organizer. Nothing was submitted or booked.'});
