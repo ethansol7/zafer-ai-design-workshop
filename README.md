@@ -1,24 +1,21 @@
-# Zafer / AI + 3D design workshop
+# Zaffre / AI + 3D design workshop
 
-An educational overview and learner resource site for a hands-on, 60-minute introductory workshop. Static HTML, CSS and JavaScript; no build, accounts, analytics, API keys or backend required.
+Public educational workshop and learner resources. Static HTML, CSS and JavaScript. GitHub Pages serves the repository root on main.
 
-Open `index.html` locally or serve this directory with a static HTTP server. GitHub Pages publishes this directory's contents from the repository root on `main`.
+## Creative phone-holder studio
 
-The interactive geometry preview is an illustration with adjustable dimensions. It does not create a native Fusion model or certify a physical design. Learners construct and verify their own editable CAD during the workshop.
+Open [studio.html](studio.html) over HTTP(S). Explore a Blender-built studio, write an idea, choose organic/cubic/modern/stylistic/utilitarian styles, mix colors/shapes/moods, draw a front silhouette, change dimensions, compare three variations, and export a custom STL and editable project JSON. Progress stays in the browser. No account, API key, AI service, telemetry or backend is used.
 
-The inquiry builder downloads text locally; it does not submit, reserve, or charge anything. There is no booking destination configured.
+The local prompt interpreter uses an explicit vocabulary. It reports recognized cues and keeps the full brief in notes. The sketch tool samples outline width and asymmetry; it does not reconstruct arbitrary objects. STL has shape only; the project retains appearance and sketch choices. The nominal phone-clearance check is educational. Physical fit, stability, strength and printability remain untested.
+
+Use [phone-holder-guide.html](phone-holder-guide.html) for the current one-hour activity. The older cable-rest workbook remains an optional simpler CAD exercise. The learner ZIP contains a written guide, reference mesh and editable playground project. The interactive studio needs HTTP(S), not file://.
 
 ## Public boundary
 
-Only the public website and general learner materials belong in this repository. No internal agent instructions, system prompts, orchestration, application-control scripts, credentials, or instructor business notes are included. Browser source is public by design.
+Only the website and broad learner material are public. No internal agent instructions, credentials, application automation, orchestration or private instructor business notes belong in this repository. Browser code and teaching geometry are public by design. No live workshop pilot has been run for this revision.
 
-Curriculum and software references are in the learner workbook. Workshop pacing and geometry are original teaching material, awaiting a live pilot. Physical fit has not been tested.
+The inquiry builder downloads a local text file; it does not submit, reserve or charge anything.
 
-© 2026 Zafer. See `USAGE.txt` for learner material permissions. No open-source license is granted for the website or brand by this repository's public visibility.
+The original Blender scene and artwork were made for Zaffre; no BlenderKit assets were used. Vendored Three.js 0.180.0 is covered by THIRD-PARTY-NOTICES.txt, limited to those third-party library files. See USAGE.txt for learner permissions. Public visibility does not grant an open-source license to the website or brand.
 
-
-## Interactive studio
-
-Open [studio.html](studio.html) for five guided activities in an original Blender-made 3D environment. Arrow buttons move the camera. Activities include brief selection, visual direction, editable dimensions, a sample clearance check and a custom STL/notes download. Progress is local to the browser. No AI service is called; these are transparent learning activities. A written workbook remains available if 3D is unavailable.
-
-The studio scene is original Zafer artwork. Three.js 0.180.0 is included under the MIT license in THIRD-PARTY-NOTICES.txt. No BlenderKit assets were used. Serve over HTTP(S); ES modules are not intended to run from file://.
+The brand is Zaffre. The existing zafer-ai-design-workshop URL is retained so shared links continue to work.

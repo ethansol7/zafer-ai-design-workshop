@@ -1,0 +1,28 @@
+{
+  "format": "zafer-phone-holder",
+  "version": 2,
+  "design": {
+    "step": 0,
+    "prompt": "",
+    "style": "organic",
+    "shape": "pebble",
+    "mood": "calm",
+    "color": "#82966f",
+    "width": 80,
+    "height": 95,
+    "depth": 85,
+    "tilt": 18,
+    "slot": 15,
+    "phone": 11,
+    "phoneWidth": 76,
+    "sketch": [],
+    "useSketch": false,
+    "briefMade": false,
+    "explored": false,
+    "sizeKept": false,
+    "fitChecked": false,
+    "testPlanned": false,
+    "downloaded": false,
+    "variations": []
+  }
+}

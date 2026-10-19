@@ -1,6 +1,6 @@
 THIRD-PARTY SOFTWARE NOTICE
 
-The MIT license below applies only to Three.js 0.180.0 and its bundled library files: three.module.js, three.core.min.js, GLTFLoader.js, BufferGeometryUtils.js, and OrbitControls.js. It does not license Zafer artwork, curriculum, branding, or original website code. See USAGE.txt for learner-material permissions.
+The MIT license below applies only to Three.js 0.180.0 and its bundled library files: three.module.js, three.core.min.js, GLTFLoader.js, BufferGeometryUtils.js, and OrbitControls.js. It does not license Zaffre artwork, curriculum, branding, or original website code. See USAGE.txt for learner-material permissions.
 
 The MIT License
 

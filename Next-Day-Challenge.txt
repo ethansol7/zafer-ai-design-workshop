@@ -1,17 +1,5 @@
-ZAFER / THE NEXT-DAY CHALLENGE
+ZAFFRE / NEXT-DAY CHALLENGE
 
-Choose one simple, noncritical desk project or variation.
-Allow 30–45 minutes. Work from a new brief, not a copied picture.
+Revisit your phone holder. Change one aesthetic choice and one measured dimension. Explain what improved. Save the project JSON, STL and a test note. Check phone fit, tipping, button access and print orientation before relying on it.
 
-1. Name the user, problem, and one success criterion.
-2. Measure one real interface and record units.
-3. Ask AI to identify missing facts; do not accept invented dimensions.
-4. Sketch a direction and create or revise your native CAD model.
-5. Change a driving dimension and explain why.
-6. Measure the result, save the native source, and export a mesh.
-7. Reopen the export and check its overall scale.
-8. Write one physical test and one next revision.
-
-Share: a before/after image, the native source, export, and a short README.
-
-Success is a reasoned, editable starting point. It is not a claim that any object can be engineered or validated in an hour.
+Try the same brief / explore / model / check / handoff thinking on another simple everyday problem.

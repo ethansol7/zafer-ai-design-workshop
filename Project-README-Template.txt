@@ -1,32 +1,13 @@
-PROJECT / REVISION:
-DESIGNER / DATE:
+ZAFFRE / PROJECT NOTES
 
-USER AND PROBLEM:
+My idea:
+Purpose and user:
+Style / shape / mood / color:
+Measured dimensions and units:
+Assumptions:
+What I changed and why:
+Export bounds:
+Physical checks still needed:
+Next revision:
 
-SUCCESS CRITERION:
-
-MEASURED FACTS (include units and measurement method):
-
-PROPOSED DIMENSIONS / ASSUMPTIONS:
-
-AI SUGGESTION I CHECKED OR CORRECTED:
-
-WHAT I CHANGED AND WHY:
-
-NATIVE DESIGN FILENAME OR SAVED DESIGN REFERENCE:
-EXPORT FILENAME AND UNITS:
-MEASURED EXPORT BOUNDS:
-
-CHECKS COMPLETED:
-[ ] Native model reopened with editable features
-[ ] One intended solid body; no visible failed features
-[ ] Revised dimension measured
-[ ] Mesh export reopened at intended size
-
-PHYSICAL TEST STILL NEEDED:
-
-PRINTER / NOZZLE / MATERIAL (if preparing a print):
-
-NEXT ACTION:
-
-STATUS: Learning prototype / not physically validated
+Keep your native CAD and/or playground project JSON with the STL. Color and material selection are separate decisions.
