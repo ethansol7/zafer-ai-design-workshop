@@ -23,3 +23,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+
+BLENDER THUMBNAIL MATERIAL CREDITS
+
+Integrated renders in holder-collection.jpg use installed BlenderKit materials:
+American Walnut — Share Textures — Royalty Free
+https://www.blendkit.com/asset-gallery-detail/0c070b21-9962-46b9-898f-18e229cca81b/
+Aluminum — Jonathan Ramos — Royalty Free
+https://www.blendkit.com/asset-gallery-detail/99d2fda8-34e4-44c2-8daa-29dce9f9723e/
+License information: https://www.blendkit.com/docs/licenses/
+These are integrated images of original Zaffre models. No raw BlenderKit material, texture or asset file is included in this public site. The live browser appearances are original procedural shaders.

@@ -1,6 +1,6 @@
 {
   "format": "zafer-phone-holder",
-  "version": 2,
+  "version": 3,
   "design": {
     "step": 0,
     "prompt": "",
@@ -8,11 +8,11 @@
     "shape": "pebble",
     "mood": "calm",
     "color": "#82966f",
-    "width": 80,
-    "height": 95,
+    "width": 85,
+    "height": 105,
     "depth": 85,
     "tilt": 18,
-    "slot": 15,
+    "slot": 16,
     "phone": 11,
     "phoneWidth": 76,
     "sketch": [],
@@ -23,6 +23,10 @@
     "fitChecked": false,
     "testPlanned": false,
     "downloaded": false,
-    "variations": []
+    "variations": [],
+    "designId": "pebble",
+    "finish": "ceramic",
+    "accent": "#e4c59b",
+    "addition": "none"
   }
 }

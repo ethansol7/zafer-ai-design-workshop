@@ -1,21 +1,31 @@
-# Zaffre / AI + 3D design workshop
+# Zaffre / Creative phone-holder studio
 
-Public educational workshop and learner resources. Static HTML, CSS and JavaScript. GitHub Pages serves the repository root on main.
+A browser-only workshop playground with 50 original phone-holder forms across ten themes. Open studio.html over HTTP(S). Write an idea, mix a form with a finish, body/accent colors and details, refine dimensions, or draw your own outline. The gallery thumbnails were rendered in Blender from the same generated geometry.
 
-## Creative phone-holder studio
+## Try it
 
-Open [studio.html](studio.html) over HTTP(S). Explore a Blender-built studio, write an idea, choose organic/cubic/modern/stylistic/utilitarian styles, mix colors/shapes/moods, draw a front silhouette, change dimensions, compare three variations, and export a custom STL and editable project JSON. Progress stays in the browser. No account, API key, AI service, telemetry or backend is used.
+- A blue ceramic cat with gold wings
+- A lavender moon with gold stars
+- A warm wooden bridge, wider, for my desk
+- A terracotta mushroom for a cozy room
+- Follow up: make it wider; remove the wings; make it walnut with gold stars.
 
-The local prompt interpreter uses an explicit vocabulary. It reports recognized cues and keeps the full brief in notes. The sketch tool samples outline width and asymmetry; it does not reconstruct arbitrary objects. STL has shape only; the project retains appearance and sketch choices. The nominal phone-clearance check is educational. Physical fit, stability, strength and printability remain untested.
+The local interpreter recognizes an explicit vocabulary and combines parameters. It is not a general AI model. Unsupported ideas receive a visible explanation and suggestions; moving parts and electronics need separate CAD work. No account, API key, telemetry or backend is used. Progress stays in this browser; export JSON to move it to another computer.
 
-Use [phone-holder-guide.html](phone-holder-guide.html) for the current one-hour activity. The older cable-rest workbook remains an optional simpler CAD exercise. The learner ZIP contains a written guide, reference mesh and editable playground project. The interactive studio needs HTTP(S), not file://.
+## Sketch and keep
 
-## Public boundary
+Draw a large, non-crossing front outline. It becomes the extruded back when you lift the pointer. Connected strokes can form an outline. Interior loops make cutouts; interior open strokes become raised lines. Marks outside the outline remain sketch references and are reported. An unfinished/invalid outline leaves the last valid model visible. Undo strokes or changes, save three variations, and export STL, project JSON and notes. Version 2 projects can be imported into the version 3 studio.
 
-Only the website and broad learner material are public. No internal agent instructions, credentials, application automation, orchestration or private instructor business notes belong in this repository. Browser code and teaching geometry are public by design. No live workshop pilot has been run for this revision.
+The 50 forms are original teaching prototypes. STL exports contain closed component meshes that can overlap; they are not Boolean-unioned production solids. Review/merge intersections in CAD or a slicer, inspect every layer, verify dimensions, and test fit, stability, strength and support needs. Colors and surface finishes are appearance choices, not material specifications. No physical print or classroom pilot has validated this revision.
 
-The inquiry builder downloads a local text file; it does not submit, reserve or charge anything.
+## Workshop
 
-The original Blender scene and artwork were made for Zaffre; no BlenderKit assets were used. Vendored Three.js 0.180.0 is covered by THIRD-PARTY-NOTICES.txt, limited to those third-party library files. See USAGE.txt for learner permissions. Public visibility does not grant an open-source license to the website or brand.
+Use phone-holder-guide.html for the one-hour lesson. Learners explore, rebuild a simple editable cradle in Fusion, measure, check and hand off their work. The older cable-rest workbook remains an optional simpler exercise. The learner ZIP contains an offline written guide and starting reference files. The interactive studio requires HTTP(S).
 
-The brand is Zaffre. The existing zafer-ai-design-workshop URL is retained so shared links continue to work.
+## Public boundary and credits
+
+Only the site, broad learner materials and teaching geometry are public. Internal agent prompts, orchestration, private instructor notes and credentials are excluded. Browser source is public by design. The inquiry builder downloads a local text file; it does not submit, book or charge anything.
+
+The studio room and the 50 forms were created for Zaffre. Pinterest was used as visual research into broad design themes; no Pinterest images or meshes are included. BlenderKit American Walnut (Share Textures) and Aluminum (Jonathan Ramos) were used in integrated Blender thumbnail renders; raw third-party materials are not distributed here. Interactive finishes use original procedural shaders. See THIRD-PARTY-NOTICES.txt for credits and the vendored Three.js license. USAGE.txt covers learner permissions, not a license to the Zaffre brand or website.
+
+The existing zafer-ai-design-workshop URL is retained for shared-link compatibility.

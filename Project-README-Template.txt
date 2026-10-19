@@ -2,7 +2,7 @@ ZAFFRE / PROJECT NOTES
 
 My idea:
 Purpose and user:
-Style / shape / mood / color:
+Form / finish / detail / style / shape / mood / body and accent:
 Measured dimensions and units:
 Assumptions:
 What I changed and why:
